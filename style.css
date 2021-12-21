@@ -355,7 +355,7 @@ body{
     background-color: rgb(255, 74, 74);
     transform: translateX(-50%);
     left: 50%;
-    top: 96%;
+    top: 102%;
 }
 .container .section .wishes img{
     widows: 220px;
@@ -409,4 +409,92 @@ body{
 }
 .container .section .wishes button:hover{
     background-color: rgb(53, 53, 53);
+}
+.container .section .footer{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 112%;
+}
+.container .section .footer span{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 14%;
+    top: 30%;
+}
+.container .section .footer span img{
+    width: 40px;
+    height: 40px;
+}
+.container .section .footer span h3{
+    position: absolute;
+    top: 7%;
+    left: 21%;
+}
+.container .section .footer span p{
+    position: absolute;
+    left: 4%;
+    font-weight: bold;
+    margin-top: 13px;
+    color: rgb(119, 119, 119);
+}
+.container .section .footer ul{
+    position: absolute;
+    left: 37%;
+    top: 30%;
+}
+.container .section .footer ul:nth-child(2){
+    position: absolute;
+    left: 60%;
+}
+.container .section .footer ul li h3{
+    color: black;
+    cursor: text;
+    margin-bottom: 20px;
+}
+.container .section .footer ul li{
+    font-weight: bold;
+    margin-top: 13px;
+    color: rgb(119, 119, 119);
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;    
+    font-size: 1.1em;
+}
+.container .section .footer ul li:hover{
+    color: rgb(196, 0, 0);
+}
+.container .section .footer .av{
+    position: absolute;
+    left: 80%;
+    font-size: 1.5em;
+    top: 32%;
+}
+.container .section .footer .avImg1
+{
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    width: 120px;
+}
+.container .section .footer .avImg2
+{
+    position: absolute;
+    left: 80%;
+    top: 48%;
+    width: 120px;
+}
+.container .section .footer .fo1{
+    position: absolute;
+    width: 120px;
+    top: 60%;
+    left: 15%;
+}
+.container .section .footer .fo2{
+    position: absolute;
+    width: 120px;
+     top: 47%;
+     left: 90%;
 }
