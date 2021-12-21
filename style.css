@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&family=Rubik&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #3f3f3f;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1b1b1b;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 550vh;
+}
+.container .header{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.container .header .nav{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container .header .nav h3{
+    position: absolute;
+    left: 22%;
+    font-family: cursive;
+    top: 30%;
+    user-select: none;
+}
+.container .header .nav span{
+    position: absolute;
+    left: 19%;
+    top: 22%;
+}
+.container .header .nav span img{
+    user-select: none;
+    width: 40px;
+    height: 40px;
+}
+.container .header .nav ul{
+    position: absolute;
+    left: 56%;
+    top: 33%;
+}
+.container .header .nav ul li{
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+.container .header .nav ul li:hover{
+    color: rgb(226, 0, 0);
+}
+.container .header .nav #moon{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 82%;
+    top: 16%;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+.container .header .nav #moon:hover{
+    width: 63px;
+    height: 63px;
+}
+.container .header img{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 18%;
+    user-select: none;
+    left: 16%;
+}
+.container .header h1{
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    font-size: 2.6em;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container .header p{
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    line-height: 24px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgb(129, 129, 129);
+}
+.container .header button{
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(255, 37, 37);
+    color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    left: 55%;
+    top: 64%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.container .header button:hover{
+    background-color: rgb(255, 106, 106);
+}
+.container .section{
+    position: absolute;
+    width: 100%;
+    height: 69%;
+    top: 90vh;
+}
+.container .section h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 4%;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.container .section .surprise{
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    left: 18%;
+    top: 11%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container .section .givingImg{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    user-select: none;
+    top: 1%;
+    transition: 0.5s;
+}.container .section .givingImg:hover{
+    transform: translateY(-10px);
+}
+.container .section  .givingH3{
+    position: absolute;
+    text-align: center;
+    transform: translateY(40px);
+    font-size: 1.6em;
+    user-select: none;
+}
+.container .section .givingPara{
+    position: absolute;
+    text-align: center;
+    transform: translateY(80px);
+    font-size: 1em;
+    line-height: 23px;
+    font-weight: 580;
+    color: rgb(124, 124, 124);
+    transition: 0.5s;
+}
+.container .section .ornaments{
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    left: 41%;
+    top: 11%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container .section .lostOfLove{
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    left: 64%;
+    top: 11%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container .section .celebrate{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 30%;
+}
+.container .section .celebrate img{
+    position: absolute;
+    width: 470px;
+    height: 470px;
+    left: 50%;
+    top: 10%;
+}
+.container .section .celebrate h2{
+    position: absolute;
+    text-align: left;
+    top: 25%;
+    left: 20%;
+    user-select: none;
+}
+.container .section .celebrate p{
+    position: absolute;
+    left: 12.3%;
+    top: 42%;
+    font-size: 1.2em;
+    line-height: 28px;
+    font-weight: 550;
+    color: rgb(146, 146, 146);
+    transition: 0.5s;
+}
+.container .section .celebrate button{
+    position: absolute;
+    width: 240px;
+    height: 60px;
+    background-color: rgb(255, 37, 37);
+    color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    left: 12.3%;
+    top: 68%;
+    cursor: pointer;
+    transition: 0.4s;
+}.container .section .celebrate button:hover{
+    background-color: rgb(255, 106, 106);
+}
+.container .section .gifts{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 56%;
+}
+.container .section .gifts h2{
+    position: absolute;
+    top: 15%;
+    font-size:1.8em ;
+}
+.container .section .gifts .rowOne{
+    height: 320px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    border-radius: 9px;
+}
+.container .section .gifts .gift{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    border-radius: 16px;
+    box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+.container .section .gifts .gift .giftImg{
+    position:absolute ;
+    width: 200px;
+    height: 200px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 1%;
+    transition: 0.3s;
+}
+.container .section .gifts .gift:hover .giftImg{
+    top: -3%;    
+}
+.container .section .gifts .gift .giftH3{
+    position: absolute;
+    left: 15px;
+    top: 69%;
+    font-size: 1.7em;
+}
+.container .section .gifts .gift .giftPara{
+    position: absolute;
+    left: 18px;
+    font-weight: bold;
+    top: 82%;
+    color: rgb(117, 117, 117);
+    transition: 0.3s;
+}
+.container .section .gifts .gift .giftLike{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+.container .section .gifts .gift .giftLikeOn{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.1s;
+}
+.container .section .gifts .gift:nth-child(1){
+    left: -3%;
+}
+.container .section .gifts .gift:nth-child(2){
+    left: 34%;
+}
+.container .section .gifts .gift:nth-child(3){
+    left: 71%;
+}
+.container .section .gifts .rowTwo{
+    height: 320px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 93%;
+    transform: translateX(-50%);
+    border-radius: 9px;
+}
