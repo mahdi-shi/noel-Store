@@ -27,7 +27,7 @@ body{
 .container{
     position: relative;
     width: 100%;
-    height: 550vh;
+    height: 750vh;
 }
 .container .header{
     position: absolute;
@@ -151,7 +151,7 @@ body{
     height: 300px;
     width: 250px;
     left: 18%;
-    top: 11%;
+    top: 8%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -188,7 +188,7 @@ body{
     height: 300px;
     width: 250px;
     left: 41%;
-    top: 11%;
+    top: 8%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -198,7 +198,7 @@ body{
     height: 300px;
     width: 250px;
     left: 64%;
-    top: 11%;
+    top: 8%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -207,7 +207,7 @@ body{
     position: absolute;
     width: 100%;
     height: 90vh;
-    top: 30%;
+    top: 22%;
 }
 .container .section .celebrate img{
     position: absolute;
@@ -254,7 +254,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100vh;
-    top: 56%;
+    top: 42%;
 }
 .container .section .gifts h2{
     position: absolute;
@@ -337,4 +337,13 @@ body{
     top: 93%;
     transform: translateX(-50%);
     border-radius: 9px;
+}
+.container .section .new{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 76%;
+}
+.container .section .new h2{
+    font-size: 1.9em
 }
