@@ -9,6 +9,9 @@
 body{
     overflow-x: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
     width: 15px;
     transition: 0.3s;
@@ -27,36 +30,44 @@ body{
 .container{
     position: relative;
     width: 100%;
-    height: 750vh;
+    height: 740vh;
+    transition: 0.6s;
 }
 .container .header{
     position: absolute;
     width: 100%;
     height: 100vh;
+    transition: 0.7s;
 }
+
 .container .header .nav{
     width: 100%;
-    height: 90px;
+    height: 80px;
     position: absolute;
     top: 0;
     left: 0;
+    background-color: white;
+    transition: 0.5s;
+    z-index: 10;
 }
 .container .header .nav h3{
     position: absolute;
-    left: 22%;
+    left: 22.0%;
     font-family: cursive;
-    top: 30%;
+    top: 27%;
     user-select: none;
+    transition: 0.4s;
 }
 .container .header .nav span{
     position: absolute;
     left: 19%;
-    top: 22%;
+    top: 17%;
 }
 .container .header .nav span img{
     user-select: none;
     width: 40px;
     height: 40px;
+
 }
 .container .header .nav ul{
     position: absolute;
@@ -70,7 +81,7 @@ body{
     cursor: pointer;
     user-select: none;
     margin-left: 30px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 .container .header .nav ul li:hover{
     color: rgb(226, 0, 0);
@@ -85,17 +96,35 @@ body{
     user-select: none;
     transition: 0.3s;
 }
+.container .header .nav #sun{
+    width: 36px;
+    height: 35px;
+    position: absolute;
+    left: 82.9%;
+    top: 21%;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+    display: none;
+}
 .container .header .nav #moon:hover{
     width: 63px;
     height: 63px;
 }
-.container .header img{
+.container .header .nav #sun:hover{
+    width: 37px;
+    height: 37px;
+}
+.container .header .imageHeader{
     position: absolute;
     width: 500px;
     height: 400px;
     top: 18%;
     user-select: none;
     left: 16%;
+    animation-name: showUp;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
 }
 .container .header h1{
     position: absolute;
@@ -104,6 +133,10 @@ body{
     font-size: 2.6em;
     user-select: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: showUp;
+    animation-fill-mode: forwards;
+    transition: 0.4s;
+    animation-duration: 2s;
 }
 .container .header p{
     position: absolute;
@@ -113,6 +146,10 @@ body{
     font-size: 1.2em;
     font-weight: 600;
     color: rgb(129, 129, 129);
+    transition: 0.4s;
+    animation-name: showUp;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
 }
 .container .header button{
     position: absolute;
@@ -128,6 +165,9 @@ body{
     top: 64%;
     cursor: pointer;
     transition: 0.4s;
+    animation-name: showUp;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
 }
 .container .header button:hover{
     background-color: rgb(255, 106, 106);
@@ -137,6 +177,28 @@ body{
     width: 100%;
     height: 69%;
     top: 90vh;
+    transition: 0.5s;
+}
+.container .section #top1{
+    position: fixed;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    right: -70px;
+    transform: translateY(-40px);
+    border: none;
+    background: radial-gradient(red,rgb(255, 255, 255));
+    z-index: 20;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.container .section #top1:hover{
+    transform: translateY(-50px);
+}
+.container .section #top1 .topImg{
+    width: 40px;
+    height: 40px;
+
 }
 .container .section h2{
     text-align: center;
@@ -155,6 +217,7 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+    opacity: 0;
 }
 .container .section .givingImg{
     position: absolute;
@@ -172,6 +235,7 @@ body{
     transform: translateY(40px);
     font-size: 1.6em;
     user-select: none;
+    transition: .4s;
 }
 .container .section .givingPara{
     position: absolute;
@@ -182,6 +246,7 @@ body{
     font-weight: 580;
     color: rgb(124, 124, 124);
     transition: 0.5s;
+    transition: .4s;
 }
 .container .section .ornaments{
     position: absolute;
@@ -192,6 +257,7 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+    opacity: 0;
 }
 .container .section .lostOfLove{
     position: absolute;
@@ -202,6 +268,25 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+    opacity: 0;
+}
+.showUp{
+    animation-name: showUp;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes showUp{
+    0%{opacity: 0;transform: translateY(60px);}
+    100%{opacity: 1;transform: translateY(0px);}
+}
+.showLeft{
+    animation-name: showLeft;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes showLeft{
+    0%{opacity: 0;transform: translateX(-290px);}
+    100%{opacity: 1;transform: translateX(-490px);}
 }
 .container .section .celebrate{
     position: absolute;
@@ -215,23 +300,28 @@ body{
     height: 470px;
     left: 50%;
     top: 10%;
+    user-select: none;
 }
 .container .section .celebrate h2{
     position: absolute;
     text-align: left;
     top: 25%;
-    left: 20%;
+    left: 12.7%;
     user-select: none;
+    transition: .4s;
+    opacity: 0;
 }
 .container .section .celebrate p{
     position: absolute;
     left: 12.3%;
-    top: 42%;
+    top: 40%;
     font-size: 1.2em;
     line-height: 28px;
     font-weight: 550;
     color: rgb(146, 146, 146);
     transition: 0.5s;
+    opacity: 0;
+    transition: .4s;
 }
 .container .section .celebrate button{
     position: absolute;
@@ -247,7 +337,9 @@ body{
     top: 68%;
     cursor: pointer;
     transition: 0.4s;
-}.container .section .celebrate button:hover{
+    opacity: 0;
+}
+.container .section .celebrate button:hover{
     background-color: rgb(255, 106, 106);
 }
 .container .section .gifts{
@@ -260,6 +352,7 @@ body{
     position: absolute;
     top: 15%;
     font-size:1.8em ;
+    transition: .4s;
 }
 .container .section .gifts .rowOne{
     height: 320px;
@@ -277,6 +370,7 @@ body{
     border-radius: 16px;
     box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2);
     user-select: none;
+    opacity: 0;
 }
 .container .section .gifts .gift .giftImg{
     position:absolute ;
@@ -345,7 +439,8 @@ body{
     top: 76%;
 }
 .container .section .new h2{
-    font-size: 1.9em
+    font-size: 1.9em;
+    transition: .4s;
 }
 .container .section .wishes{
     position: absolute;
@@ -356,6 +451,7 @@ body{
     transform: translateX(-50%);
     left: 50%;
     top: 102%;
+    opacity: 0;
 }
 .container .section .wishes img{
     widows: 220px;
@@ -413,7 +509,7 @@ body{
 .container .section .footer{
     position: absolute;
     width: 100%;
-    height: 90vh;
+    height: 78vh;
     top: 112%;
 }
 .container .section .footer span{
@@ -430,6 +526,7 @@ body{
 .container .section .footer span h3{
     position: absolute;
     top: 7%;
+    transition: 0.4s;
     left: 21%;
 }
 .container .section .footer span p{
@@ -438,6 +535,7 @@ body{
     font-weight: bold;
     margin-top: 13px;
     color: rgb(119, 119, 119);
+    transition: 0.4s;
 }
 .container .section .footer ul{
     position: absolute;
@@ -451,6 +549,7 @@ body{
 .container .section .footer ul li h3{
     color: black;
     cursor: text;
+    transition: 0.4s;
     margin-bottom: 20px;
 }
 .container .section .footer ul li{
@@ -460,7 +559,7 @@ body{
     list-style: none;
     cursor: pointer;
     user-select: none;
-    transition: 0.3s;    
+    transition: 0.4s;
     font-size: 1.1em;
 }
 .container .section .footer ul li:hover{
@@ -470,6 +569,7 @@ body{
     position: absolute;
     left: 80%;
     font-size: 1.5em;
+    transition: .4s;
     top: 32%;
 }
 .container .section .footer .avImg1
@@ -497,4 +597,12 @@ body{
     width: 120px;
      top: 47%;
      left: 90%;
+}
+#cnv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
 }

@@ -7,39 +7,42 @@
     <title>home</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="nav">
+    <div class="container" id="con">
+        <canvas id="cnv"></canvas>
+        <div id="topest" class="header">
+            <div id="navBar" class="nav">
                 <span><img src="images/favicon.png" alt="loading"></span>
-                <h3>NoelStore</h3>
+                <h3 id="iconName">NoelStore</h3>
                 <ul>
-                    <li>Home</li>
-                    <li>Gifts</li>
-                    <li>Celebrate</li>
-                    <li>New</li>
+                    <li class="mn">Home</li>
+                    <li class="mn">Gifts</li>
+                    <li class="mn">Celebrate</li>
+                    <li class="mn">New</li>
                 </ul>
                 <img id="moon" src="images/moon.png" alt="loading">
+                <img id="sun" src="images/sun.png" alt="loading">
             </div>
-            <img src="images/home.png" alt="loading">
-            <h1>Merry Christmas and <br>Happy New Year!</h1>
-            <p>Christmas is about successes and wishes <br> Seeing believe is right?</p>
-            <button>Get Started</button>
+            <img class="imageHeader" src="images/home.png" alt="loading">
+            <h1  id="headerText" class="sh0">Merry Christmas and <br>Happy New Year!</h1>
+            <p id="headerPara" class="sh0">Christmas is about successes and wishes <br> Seeing believe is right?</p>
+            <button id="headerButton" class="sh0">Get Started</button>
         </div>
-        <div class="section">
-            <h2>Start Giving This <br>Christmas</h2>
-            <div class="surprise">
+        <div class="section" id="section">
+            <button id="top1"><a href="#topest"><img class="topImg" src="images/top.png" alt="loading"></a></button>
+            <h2 id="givingHeader">Start Giving This <br>Christmas</h2>
+            <div class="surprise sh1">
                 <img class="givingImg" src="images/giving1.png" alt="loading">
                 <h3 class="givingH3">Surprise gifts</h3>
                 <p class="givingPara">They are the best <br> gifts there is.
                 </p>
             </div>
-            <div class="ornaments">
+            <div class="ornaments sh1">
                 <img class="givingImg" src="images/giving2.png" alt="loading">
                 <h3 class="givingH3">Ornaments</h3>
                 <p class="givingPara">Give a moment to<br>decorate.
                 </p>
             </div>
-            <div class="lostOfLove">
+            <div class="lostOfLove sh1">
                 <img class="givingImg" src="images/giving3.png" alt="loading">
                 <h3 class="givingH3">Lost of love</h3>
                 <p class="givingPara">Give away feelings<br>that lost forever.
@@ -47,12 +50,12 @@
             </div>
             <div class="celebrate">
                 <img src="images/celebrate.png" alt="loading">
-                <h2>Celebrate With A <br>Lot Of Love</h2>
-                <p>In this holidays, celebrate with much love and <br>peace, offering many blessings to our loved <br>ones, freands neighbors, wishing them a <br>good Christmas message.</p>
-                <button>Send Good Wishes</button>
+                <h2 id="celHeader" class="sh2">Celebrate With A <br>Lot Of Love</h2>
+                <p id="celPara" class="sh2">In this holidays, celebrate with much love and <br>peace, offering many blessings to our loved <br>ones, freands neighbors, wishing them a <br>good Christmas message.</p>
+                <button class="sh2">Send Good Wishes</button>
             </div>
             <div class="gifts">
-                <h2>Share A Gift</h2>
+                <h2 id="giftHeader">Share A Gift</h2>
                 <div class="rowOne">
                     <div class="gift">
                         <img class="giftImg" src="images/gift1.png" alt="loading">
@@ -94,10 +97,10 @@
                 </div>
             </div>
             <div class="new">
-                <h2>New Gifts</h2>
+                <h2 id="newHeader">New Gifts</h2>
             </div>
 
-            <div class="wishes">
+            <div id="wish" class="wishes">
                 <h2>Send Good <br>Wishes!</h2>
                 <input type="text" name="txt" id="txt" placeholder="Write Your Message">
                 <button>Send Message</button>
@@ -107,21 +110,21 @@
             <div class="footer">
                 <span>
                     <img src="images/logo (1).png" alt="loading">
-                    <h3>NoelStore</h3>
-                    <p>this Christmas give <br> a lot of love</p>
+                    <h3 id="footerIconHeader">NoelStore</h3>
+                    <p id="footerIconPara">this Christmas give <br> a lot of love</p>
 
                 </span>
                 <ul>
-                    <li><h3>Our Services</h3></li>
-                    <li>Pricing</li>
-                    <li>Discounst</li>
-                    <li>Shipping Mode</li>
+                    <li><h3 class="footerLiHeader">Our Services</h3></li>
+                    <li class="footerLi">Pricing</li>
+                    <li class="footerLi">Discounst</li>
+                    <li class="footerLi">Shipping Mode</li>
                 </ul>
                 <ul>
-                    <li><h3>Support</h3></li>
-                    <li>FAQs</li>
-                    <li>Support Center</li>
-                    <li>Contact Us</li>
+                    <li><h3 class="footerLiHeader">Support</h3></li>
+                    <li class="footerLi">FAQs</li>
+                    <li class="footerLi">Support Center</li>
+                    <li class="footerLi">Contact Us</li>
                 </ul>
                 <h3 class="av">Available on</h3>
                 <img class="avImg1" src="images/aviable1.png" alt="loading">
