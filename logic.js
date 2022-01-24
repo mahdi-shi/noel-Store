@@ -241,3 +241,24 @@ setInterval(() => {
     }
 
 },5000)
+
+//menu for mobile mode
+
+let blackMenu = document.getElementById("menuBlack");
+let whiteMenu = document.querySelector("#menuWhite");
+let menuState = false;
+let menuBox = document.querySelector("#menuBox");
+
+blackMenu.addEventListener("click",() => {
+    if(menuState == false){
+        blackMenu.style.transform = "rotate("+90+"deg)"
+        menuState = true;
+        menuBox.style.left = 60 + "%";
+    }
+    else if(menuState == true){
+        blackMenu.style.transform = "rotate("+0+"deg)";
+        menuBox.style.left = 100 + "%";
+        menuState = false;
+    }
+
+})

@@ -50,6 +50,9 @@ html{
     transition: 0.5s;
     z-index: 10;
 }
+.container .header .nav table{
+    display: none;
+}
 .container .header .nav h3{
     position: absolute;
     left: 22.0%;
@@ -119,6 +122,33 @@ html{
 .container .header .nav #sun:hover{
     width: 37px;
     height: 37px;
+}
+.container .header .nav #menuBox{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(172, 0, 0);
+    border-radius: 10px;
+    left: 100%;
+    transition: 0.8s;
+}
+.container .header .nav #menuBox ul{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+}
+.container .header .nav #menuBox ul li{
+    color: rgb(238, 238, 238);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+
+}
+.container .header .nav #menuBlack{
+    z-index: 20px;
+    display: none;
 }
 .container .header .imageHeader{
     position: absolute;
@@ -551,13 +581,13 @@ html{
     margin-left: 460;
 }
 .container .section .new .slides #radio2:checked ~ .first{
-    margin-left: -400px;
+    margin-left: -430px;
 }
 .container .section .new .slides #radio3:checked ~ .first{
-    margin-left: -1240px;
+    margin-left: -1280px;
 }
 .container .section .new .slides #radio4:checked ~ .first{
-    margin-left: -2100px;
+    margin-left: -2140px;
 }
 .container .section .new .slides .navigation-auto{
     position: absolute;
@@ -757,7 +787,7 @@ html{
     .container{
         position: relative;
         width: 100%;
-        height: 900vh;
+        height: 960vh;
         transition: 0.6s;
     }
     .container .header{
@@ -910,5 +940,562 @@ html{
     .container .header button:hover{
         background-color: rgb(255, 106, 106);
     }
+    .container .section h2{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        top:9%;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .container .section .surprise{
+        position: absolute;
+        height: 300px;
+        width: 250px;
+        left: 6%;
+        top: 11.2%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        opacity: 0;
+    }
+    .container .section .givingImg{
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        user-select: none;
+        top: 1%;
+        transition: 0.5s;
+    }.container .section .givingImg:hover{
+        transform: translateY(-10px);
+    }
+    .container .section  .givingH3{
+        position: absolute;
+        text-align: center;
+        transform: translateY(40px);
+        font-size: 1.6em;
+        user-select: none;
+        transition: .4s;
+    }
+    .container .section .givingPara{
+        position: absolute;
+        text-align: center;
+        transform: translateY(80px);
+        font-size: 1em;
+        line-height: 23px;
+        font-weight: 580;
+        color: rgb(124, 124, 124);
+        transition: 0.5s;
+        transition: .4s;
+    }
+    .container .section .ornaments{
+        position: absolute;
+        height: 300px;
+        width: 250px;
+        left: 47%;
+        top: 11.2%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        opacity: 0;
+    }
+    .container .section .lostOfLove{
+        position: absolute;
+        height: 300px;
+        width: 250px;
+        left: 6%;
+        top: 18%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        opacity: 0;
+    }
+    .container .section .celebrate{
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+        top: 23%;
+    }
+    .container .section .celebrate img{
+        position: absolute;
+        width: 470px;
+        height: 470px;
+        left: 5%;
+        top: 70%;
+        user-select: none;
+    }
+    .container .section .celebrate h2{
+        position: absolute;
+        text-align: left;
+        top: 25%;
+        left: 32.0%;
+        user-select: none;
+        transition: .4s;
+        opacity: 0;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .container .section .celebrate p{
+        position: absolute;
+        left: 10.0%;
+        top: 40%;
+        font-size: 1.2em;
+        line-height: 28px;
+        font-weight: 550;
+        color: rgb(146, 146, 146);
+        transition: 0.5s;
+        opacity: 0;
+        text-align: center;
+        transition: .4s;
+    }
+    .container .section .celebrate button{
+        position: absolute;
+        width: 240px;
+        height: 60px;
+        background-color: rgb(255, 37, 37);
+        color: rgb(245, 245, 245);
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1em;
+        font-weight: 600;
+        left: 27.3%;
+        top: 70%;
+        cursor: pointer;
+        transition: 0.4s;
+        opacity: 0;
+    }
+    .container .section .gifts{
+        position: absolute;
+        width: 100%;
+        height: 230vh;
+        top: 40%;
+    }
+    .container .section .gifts h2{
+        position: absolute;
+        top: 17%;
+        font-size:1.8em ;
+        transition: .4s;
+    }
+    .container .section .gifts .rowOne{
+        height: 320px;
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        top: 26%;
+        transform: translateX(-50%);
+        border-radius: 9px;
+    }
+    .container .section .gifts .gift{
+        position: absolute;
+        width: 200px;
+        height: 250px;
+        border-radius: 16px;
+        box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2);
+        user-select: none;
+        opacity: 0;
+    }
+    .container .section .gifts .gift .giftImg{
+        position:absolute ;
+        width: 150px;
+        height: 150px;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 1%;
+        transition: 0.3s;
+    }
+    .container .section .gifts .gift:hover .giftImg{
+        top: -3%;    
+    }
+    .container .section .gifts .gift .giftH3{
+        position: absolute;
+        left: 15px;
+        top: 69%;
+        font-size: 1.7em;
+    }
+    .container .section .gifts .gift .giftPara{
+        position: absolute;
+        left: 18px;
+        font-weight: bold;
+        top: 82%;
+        color: rgb(117, 117, 117);
+        transition: 0.3s;
+    }
+    .container .section .gifts .gift .giftLike{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        user-select: none;
+        cursor: pointer;
+    }
+    .container .section .gifts .gift .giftLikeOn{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        user-select: none;
+        cursor: pointer;
+        opacity: 0;
+        transition: 0.1s;
+    }
+    .container .section .gifts .gift:nth-child(1){
+        left: -20%;
+    }
+    .container .section .gifts .gift:nth-child(2){
+        left: 54%;
+    }
+    .container .section .gifts .gift:nth-child(3){
+        left: -21%;
+        top: 85%;
+    }
+    .container .section .gifts .rowTwo #g4{
+        left: -21%;
+        transform: translate(200px,200px);
+    }
+    .container .section .gifts .rowTwo{
+        height: 320px;
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        top: 45.2%;
+        transform: translateX(-50%);
+        border-radius: 9px;
+    }
+    .container .section .new{
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+        top: 70%;
+    }
+    .container .section .new h2{
+        font-size: 1.9em;
+        transition: .4s;
+    }
+    .container .section .new ul{
+        position: absolute;
+        transform: translateX(-55%);
+        left:50%;
+        top: 80%;
+    }
+    .container .section .new ul li{
+        display: inline-block;
+        margin-left: 10px;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .container .section .new .slides{
+        height: 500px;
+        width: 600%;
+        display: flex;
+        position: absolute;
+        top: 30%;
+    }
+    .container .section .new .slides .first{
+        margin-left: 170;
+        left: 30px;
+        width: 400px;
 
+    }
+    .container .section .new .slides input{
+        display: none;
+        transform: translateY(-70px);
+    }
+    .container .section .new .slides .slide{
+        width: 400px;
+        height: 440px;
+        background-color: rgb(179, 0, 0);
+        margin-left: 460px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        transition: 1s;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+        transform: translateX(-400px);
+    }
+    .container .section .new .sl    ides .slide .image{
+        width: 100%;    
+        position: absolute;
+        height: 70%;
+        background-color: white;
+        border: 4px solid rgb(179, 0, 0);
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+        border-bottom-left-radius: 42%;
+        border-bottom-right-radius: 42%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .container .section .new .slides .slide .image img{
+        width: 300px;
+        height: 300px;
+        transition: 0.3s;
+    }
+    .container .section .new .slides .slide .image img:hover{
+        transform: translateY(-10px);
+    }
+    .container .section .new .slides .slide h3{
+        position: absolute;
+        color: white;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%,20%);
+        font-weight: bold;
+        font-size: 2.5em;
+    }
+    .container .section .new .slides .slide p{
+        position: absolute;
+        color: white;
+        left: 70%;
+        top: 80%;
+        transform: translate(-50%,60%);
+        font-weight: bold;
+        font-size: 1.8em;
+        width: 100%;
+    }
+    .container .section .new .slides .slide .p-new{
+        left: 75%;
+        top: 80%;
+        transform: translate(-40%,60%);
+    }
+    .container .section .new .navigation-manual{
+        display: flex;
+        justify-content: center;
+        transform: translate(7px,657px);
+        z-index: 20px;
+    }
+    .container .section .new .navigation-manual .manual-btn{
+        padding: 5px;
+        border: 2px solid rgb(179, 0, 0);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s; 
+        margin-left: 8px;
+    }
+    .container .section .new .navigation-manual .manual-btn:hover{
+        background-color: rgb(179, 0, 0);
+    }
+    .container .section .new .slides #radio1:checked ~ .first{
+        margin-left: 70;
+        left: 390px;
+    }
+    .container .section .new .slides #radio2:checked ~ .first{
+        margin-left: -460px;
+    }
+    .container .section .new .slides #radio3:checked ~ .first{
+        margin-left: -1320px;
+    }
+    .container .section .new .slides #radio4:checked ~ .first{
+        margin-left: -2180px;
+    }
+    .container .section .new .slides .navigation-auto{
+        position: absolute;
+        display: flex;
+        transform: translateX(-35%);
+        left:8.1%;
+        top: 98.1%;
+    }
+    .container .section .new .slides .navigation-auto div{
+        border: 2px solid rgb(179, 0, 0);
+        padding: 5px;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin-left: 8px;
+    }
+    .container .section .new .slides #radio1:checked ~ .navigation-auto .auto-btn1{
+        background-color:  rgb(179, 0, 0);
+    }
+    .container .section .new .slides #radio2:checked ~ .navigation-auto .auto-btn2{
+        background-color:  rgb(179, 0, 0);
+    }
+    .container .section .new .slides #radio3:checked ~ .navigation-auto .auto-btn3{
+        background-color:  rgb(179, 0, 0);
+    }
+    .container .section .new .slides #radio4:checked ~ .navigation-auto .auto-btn4{
+        background-color:  rgb(179, 0, 0);
+    }
+    .container .section .wishes{
+        position: absolute;
+        width: 86%;
+        height: 100vh;
+        border-radius: 30px;
+        background-color: rgb(255, 74, 74);
+        transform: translateX(-50%);
+        left: 108.5%;
+        top: 88%;
+        opacity: 0;
+    }
+    .container .section .wishes img{
+        width: 240px;
+        height: 150px;
+        transform: rotate(20deg);
+        position: absolute;
+        left: 20%;
+        top: 65%;
+    }
+    .container .section .wishes h2{
+        text-align: left;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.7em;
+        position: absolute;
+        left: 49%;
+        width: 300px;
+        text-align: center;
+        top: 7%;
+    }   
+    .container .section .wishes input{
+        position: absolute;
+        width: 360px;
+        height: 60px;
+        border-radius: 40px;
+        border: none;
+        font-weight: bold;
+        padding-left: 10px;
+        font-size: 1em;
+        left: 7.0%;
+        top: 34%;
+        padding-right: 10px;
+    }
+    .container .section .wishes input:focus{
+        border: none;
+        outline: none;
+    }
+    .container .section .wishes button{
+        position: absolute;
+        width: 360px;
+        height: 64px;
+        border-radius: 40px;
+        border: none;
+        font-weight: bold;
+        font-size: 1em;
+        left: 7.0%;
+        top: 47%;
+        transition: 0.3s;
+        background-color: #000;
+        color: white;
+        user-select: none;
+        cursor: pointer;
+    }
+    .container .section .wishes button:hover{
+        background-color: rgb(53, 53, 53);
+    }
+    .container .section .footer{
+        position: absolute;
+        width: 100%;
+        height: 78vh;
+        top: 104%;
+    }
+    .container .section .footer span{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 34%;
+        top: 30%;
+    }
+    .container .section .footer span img{
+        width: 60px;
+        height: 60px;
+        transform: translateX(-20px);
+    }
+    .container .section .footer span h3{
+        position: absolute;
+        top: 7%;
+        transition: 0.4s;
+        left: 21%;
+        font-size: 1.6em;
+    }
+    .container .section .footer span p{
+        position: absolute;
+        left: 4%;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 13px;
+        color: rgb(119, 119, 119);
+        transition: 0.4s;
+    }
+    .container .section .footer ul{
+        position: absolute;
+        left: 37%;
+        top: 30%;
+    }
+    .container .section .footer ul:nth-child(2){
+        position: absolute;
+        left: 60%;
+    }
+    .container .section .footer ul li h3{
+        color: black;
+        cursor: text;
+        transition: 0.4s;
+        font-size: 1.4em;
+        margin-bottom: 20px;
+        widows: 300px;
+    }
+    .container .section .footer ul li{
+        font-weight: bold;
+        margin-top: 13px;
+        color: rgb(119, 119, 119);
+        list-style: none;
+        cursor: pointer;
+        user-select: none;
+        transition: 0.4s;
+        font-size: 1.4em;
+        widows: 300px;
+    }
+    .container .section .footer ul li:hover{
+        color: rgb(196, 0, 0);
+    }
+    .container .section .footer .av{
+        position: absolute;
+        left: 18%;
+        font-size: 1.7em;
+        transition: .4s;
+        top: 151%;
+    }
+    .container .section .footer .avImg1
+    {
+        position: absolute;
+        left: 18%;
+        top: 162%;
+        width: 120px;
+    }
+    .container .section .footer .avImg2
+    {
+        position: absolute;
+        left: 18%;
+        top: 170%;
+        width: 120px;
+    }
+    .container .section .footer .fo1{
+        position: absolute;
+        width: 120px;
+        top: 70%;
+        left: 65%;
+    }
+    .container .section .footer .fo2{
+        position: absolute;
+        width: 120px;
+        top:155%;
+        left: 85%;
+    }
+    .container .section .footer .list1{
+        top: 60%;
+        transform: translateX(-200px);
+    }
+    .container .section .footer .list2{
+        top: 100%;
+        transform: translateX(-90px);
+    }
+    .container .header .nav #menuBlack{
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        z-index: 40;
+        display: block;
+    }
 }
