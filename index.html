@@ -14,10 +14,10 @@
                 <span><img src="images/favicon.png" alt="loading"></span>
                 <h3 id="iconName">NoelStore</h3>
                 <ul>
-                    <li class="mn">Home</li>
-                    <li class="mn">Gifts</li>
-                    <li class="mn">Celebrate</li>
-                    <li class="mn">New</li>
+                    <li class="mn"><a href="#" class="mn">Home</a></li>
+                    <li class="mn"><a href="#gifts" class="mn">Gifts</a></li>
+                    <li class="mn"><a href="#celebrate" class="mn">Celebrate</a></li>
+                    <li class="mn"><a href="#new" class="mn">New</a></li>
                 </ul>
                 <img id="moon" src="images/moon.png" alt="loading">
                 <img id="sun" src="images/sun.png" alt="loading">
@@ -48,13 +48,13 @@
                 <p class="givingPara">Give away feelings<br>that lost forever.
                 </p>
             </div>
-            <div class="celebrate">
+            <div class="celebrate" id="celebrate">
                 <img src="images/celebrate.png" alt="loading">
                 <h2 id="celHeader" class="sh2">Celebrate With A <br>Lot Of Love</h2>
                 <p id="celPara" class="sh2">In this holidays, celebrate with much love and <br>peace, offering many blessings to our loved <br>ones, freands neighbors, wishing them a <br>good Christmas message.</p>
                 <button class="sh2">Send Good Wishes</button>
             </div>
-            <div class="gifts">
+            <div class="gifts" id="gifts">
                 <h2 id="giftHeader">Share A Gift</h2>
                 <div class="rowOne">
                     <div class="gift">
@@ -96,8 +96,52 @@
                     </div>
                 </div>
             </div>
-            <div class="new">
+            <div class="new" id="new"> 
                 <h2 id="newHeader">New Gifts</h2>
+
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <div class="image"><img src="images/new1.png" alt="loading..."></div>
+                        <h3 class="slideH3">$15</h3>
+                        <p class="slideP">Christmas Wreath</p>
+                    </div>
+                    <div class="slide">
+                        <div class="image"><img src="images/new2.png" alt="loading..."></div>
+                        <h3 class="slideH3">$95</h3>
+                        <p class="p-new slideP">Reindeer</p>
+                    </div>
+                    <div class="slide">
+                        <div class="image"><img src="images/new3.png" alt="loading..."></div>
+                        <h3 class="slideH3">%90</h3>
+                        <p class="p-new slideP">Show Globe</p>
+                    </div>
+                    <div class="slide">
+                        <div class="image"><img src="images/new4.png" alt="loading..."></div>
+                        <h3 class="slideH3">$34</h3>
+                        <p class="slideP" style="transform: translate(-35%,60%);">Important</p>
+                    </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+    
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+
             </div>
 
             <div id="wish" class="wishes">

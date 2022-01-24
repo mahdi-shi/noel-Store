@@ -74,6 +74,11 @@ html{
     left: 56%;
     top: 33%;
 }
+.container .header .nav ul li a{
+    text-decoration: none;
+    transition: 0.3s;
+    color: black;
+}
 .container .header .nav ul li{
     display: inline-block;
     font-family: sans-serif;
@@ -83,7 +88,7 @@ html{
     margin-left: 30px;
     transition: 0.4s;
 }
-.container .header .nav ul li:hover{
+.container .header .nav ul li a:hover{
     color: rgb(226, 0, 0);
 }
 .container .header .nav #moon{
@@ -442,6 +447,145 @@ html{
     font-size: 1.9em;
     transition: .4s;
 }
+.container .section .new ul{
+    position: absolute;
+    transform: translateX(-55%);
+    left:50%;
+    top: 80%;
+}
+.container .section .new ul li{
+    display: inline-block;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    border-radius: 50%;
+    background-color: black;
+}
+.container .section .new .slides{
+    height: 500px;
+    width: 300%;
+    display: flex;
+    position: absolute;
+    top: 23%;
+}
+.container .section .new .slides input{
+    display: none;
+    transform: translateY(-70px);
+}
+.container .section .new .slides .slide{
+    width: 400px;
+    height: 440px;
+    background-color: rgb(179, 0, 0);
+    margin-left: 460px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: 1s;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+}
+.container .section .new .slides .slide .image{
+    width: 100%;
+    position: absolute;
+    height: 70%;
+    background-color: white;
+    border: 4px solid rgb(179, 0, 0);
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius: 42%;
+    border-bottom-right-radius: 42%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container .section .new .slides .slide .image img{
+    width: 300px;
+    height: 300px;
+    transition: 0.3s;
+}
+.container .section .new .slides .slide .image img:hover{
+    transform: translateY(-10px);
+}
+.container .section .new .slides .slide h3{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,20%);
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.container .section .new .slides .slide p{
+    position: absolute;
+    color: white;
+    left: 70%;
+    top: 80%;
+    transform: translate(-50%,60%);
+    font-weight: bold;
+    font-size: 1.8em;
+    width: 100%;
+}
+.container .section .new .slides .slide .p-new{
+    left: 75%;
+    top: 80%;
+    transform: translate(-40%,60%);
+}
+.container .section .new .navigation-manual{
+    display: flex;
+    justify-content: center;
+    transform: translateY(620px);
+    z-index: 20px;
+}
+.container .section .new .navigation-manual .manual-btn{
+    padding: 5px;
+    border: 2px solid rgb(179, 0, 0);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s; 
+    margin-left: 8px;
+}
+.container .section .new .navigation-manual .manual-btn:hover{
+    background-color: rgb(179, 0, 0);
+}
+.container .section .new .slides #radio1:checked ~ .first{
+    margin-left: 460;
+}
+.container .section .new .slides #radio2:checked ~ .first{
+    margin-left: -400px;
+}
+.container .section .new .slides #radio3:checked ~ .first{
+    margin-left: -1240px;
+}
+.container .section .new .slides #radio4:checked ~ .first{
+    margin-left: -2100px;
+}
+.container .section .new .slides .navigation-auto{
+    position: absolute;
+    display: flex;
+    transform: translateX(-35%);
+    left:16.3%;
+    top: 98.1%;
+}
+.container .section .new .slides .navigation-auto div{
+    border: 2px solid rgb(179, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-left: 8px;
+}
+.container .section .new .slides #radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color:  rgb(179, 0, 0);
+}
+.container .section .new .slides #radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color:  rgb(179, 0, 0);
+}
+.container .section .new .slides #radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color:  rgb(179, 0, 0);
+}
+.container .section .new .slides #radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color:  rgb(179, 0, 0);
+}
+
 .container .section .wishes{
     position: absolute;
     width: 72%;
@@ -605,4 +749,166 @@ html{
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
+}
+
+@media  only screen and (max-width:500px) {
+    
+
+    .container{
+        position: relative;
+        width: 100%;
+        height: 900vh;
+        transition: 0.6s;
+    }
+    .container .header{
+        position: absolute;
+        width: 100%;
+        height: 150vh;
+        transition: 0.7s;
+    }
+    
+    .container .header .nav{
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .container .header .nav h3{
+        position: absolute;
+        left: 22.0%;
+        font-family: cursive;
+        top: 38%;
+        user-select: none;
+        transition: 0.4s;
+        font-size: 1.6em;
+    }
+    .container .header .nav span{
+        position: absolute;
+        left: 10%;
+        transform: scale(1.5);
+        top: 33%;
+    }
+    .container .header .nav span img{
+        user-select: none;
+        width: 40px;
+        height: 40px;
+    
+    }
+    .container .header .nav ul{
+        position: absolute;
+        left: 56%;
+        top: 33%;
+        display: none;
+    }
+    .container .header .nav ul li a{
+        text-decoration: none;
+        transition: 0.3s;
+        color: black;
+    }
+    .container .header .nav ul li{
+        display: inline-block;
+        font-family: sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+        margin-left: 30px;
+        transition: 0.4s;
+    }
+    .container .header .nav ul li a:hover{
+        color: rgb(226, 0, 0);
+    }
+    .container .header .nav #moon{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 72%;
+        top: 22%;
+        cursor: pointer;
+        user-select: none;
+        transition: 0.3s;
+    }
+    .container .header .nav #sun{
+        width: 46px;
+        height: 45px;
+        position: absolute;
+        left: 75.9%;
+        top: 33%;
+        cursor: pointer;
+        user-select: none;
+        transition: 0.3s;
+        display: none;
+    }
+    .container .header .nav #moon:hover{
+        width: 83px;
+        height: 83px;
+    }
+    .container .header .nav #sun:hover{
+        width: 50px;
+        height: 50px;
+    }
+    .container .header .imageHeader{
+        position: absolute;
+        width: 400px;
+        height: 320px;
+        top: 14%;
+        user-select: none;
+        left: 11%;
+        animation-name: showUp;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+    }
+    .container .header h1{
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateX(-80%);
+        font-size: 2.6em;
+        user-select: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        animation-name: showUp;
+        animation-fill-mode: forwards;
+        transition: 0.4s;
+        animation-duration: 2s;
+        text-align: center;
+    }
+    .container .header p{
+        position: absolute;
+        left: 13%;
+        top: 63%;
+        line-height: 24px;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: rgb(129, 129, 129);
+        transition: 0.4s;
+        animation-name: showUp;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+        text-align: center;
+    }
+    .container .header button{
+        position: absolute;
+        width: 200px;
+        height: 60px;
+        background-color: rgb(255, 37, 37);
+        color: rgb(245, 245, 245);
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1em;
+        font-weight: 600;
+        left: 29%;
+        top: 72%;
+        cursor: pointer;
+        transition: 0.4s;
+        animation-name: showUp;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+    }
+    .container .header button:hover{
+        background-color: rgb(255, 106, 106);
+    }
+
 }

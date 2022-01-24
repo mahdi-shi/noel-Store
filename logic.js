@@ -88,6 +88,15 @@ const footerIconPara = document.getElementById("footerIconPara");
 const footerLi = document.querySelectorAll(".footerLi");
 const footerLiHeader = document.querySelectorAll(".footerLiheader");
 const av = document.querySelector(".av");
+const imageSlide = document.getElementsByClassName("image");
+const slide = document.getElementsByClassName("slide");
+const slideH3 = document.getElementsByClassName("slideH3");
+const slideP = document.getElementsByClassName("slideP");
+const mBtn = document.querySelectorAll(".manual-btn");
+const radio1 = document.getElementById("#radio1");
+const radio2 = document.getElementById("#radio2");
+const radio3 = document.getElementById("#radio3");
+const radio4 = document.getElementById("#radio4");
 
 moon.addEventListener("click",() => {
     sun.style.display = "block";
@@ -136,6 +145,22 @@ moon.addEventListener("click",() => {
         })
     }
     av.style.color = "#fff";
+    for(let i = 0;i < slide.length;i++){
+        slide[i].style.backgroundColor="rgb(255, 255, 255)";
+        slideH3[i].style.color = "black";
+        slideP[i].style.color = "black";
+        //imageSlide[i].style.backgroundColor = rgb(179, 0, 0);
+    }
+    for(let i = 0;i < mBtn.length;i++){
+        mBtn[i].style.border = "2px solid rgb(255, 255, 255)";
+        mBtn[i].style.backgroundColor = "rgb(170, 0, 0)";
+        mBtn[i].addEventListener("mouseover",() => {
+            mBtn[i].style.backgroundColor = "white";
+        })
+        mBtn[i].addEventListener("mouseout",() => {
+            mBtn[i].style.backgroundColor = "rgb(170, 0, 0)";
+        })
+    }
 })
 sun.addEventListener("click",() => {
     moon.style.display = "block";
@@ -183,8 +208,36 @@ sun.addEventListener("click",() => {
             footerLi[i].style.color = "rgb("+129+", "+129+", "+129+")";
         })
     }
+    for(let i = 0;i < slide.length;i++){
+        slide[i].style.backgroundColor="rgb(179, 0, 0)";
+        slideH3[i].style.color = "white";
+        slideP[i].style.color = "white";
+        //imageSlide[i].style.backgroundColor = rgb(179, 0, 0);
+    }
+    for(let i = 0;i < mBtn.length;i++){
+        mBtn[i].style.border = "2px solid rgb(170, 0, 0)"
+        mBtn[i].style.backgroundColor = "white";
+        mBtn[i].addEventListener("mouseover",() => {
+            mBtn[i].style.backgroundColor = "rgb(170, 0, 0)";
+        })
+        mBtn[i].addEventListener("mouseout",() => {
+            mBtn[i].style.backgroundColor = "white";
+        })
+    }
     av.style.color = "#000";
+
 })
 
-//snow making
+// slider of new box
 
+let counter = 1;
+ 
+setInterval(() => {
+
+    document.getElementById("radio" + counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+
+},5000)
